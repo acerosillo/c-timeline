@@ -1,0 +1,728 @@
+
+/* General button style (reset) */
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 80px;
+    display: inline-block;
+    margin: 15px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* Button 1 */
+.btn-1 {
+    border: 3px solid #000;
+    color: #000;
+}
+
+/* Button 1a */
+.btn-1a:hover,
+.btn-1a:active {
+    color: #fff;
+    background: #000;
+}
+
+/* Button 1b */
+.btn-1b:after {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #000;
+}
+
+.btn-1b:hover,
+.btn-1b:active {
+    color: #fff;
+}
+
+.btn-1b:hover:after,
+.btn-1b:active:after {
+    height: 100%;
+}
+
+/* Button 1c */
+.btn-1c:after {
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+}
+
+.btn-1c:hover,
+.btn-1c:active {
+    color: #fff;
+}
+
+.btn-1c:hover:after,
+.btn-1c:active:after {
+    width: 100%;
+}
+
+/* Button 1d */
+.btn-1d {
+    overflow: hidden;
+}
+
+.btn-1d:after {
+    width: 0;
+    height: 103%;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-1d:hover,
+.btn-1d:active {
+    color: #fff;
+}
+
+.btn-1d:hover:after {
+    width: 90%;
+    opacity: 1;
+}
+
+.btn-1d:active:after {
+    width: 101%;
+    opacity: 1;
+}
+
+/* Button 1e */
+.btn-1e {
+    overflow: hidden;
+}
+
+.btn-1e:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+    color: #fff;
+}
+
+.btn-1e:hover:after {
+    height: 260%;
+    opacity: 1;
+}
+
+.btn-1e:active:after {
+    height: 400%;
+    opacity: 1;
+}
+
+/* Button 1f */
+.btn-1f {
+    overflow: hidden;
+}
+
+.btn-1f:after {
+    width: 101%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-1f:hover,
+.btn-1f:active {
+    color: #fff;
+}
+
+.btn-1f:hover:after {
+    height: 75%;
+    opacity: 1;
+}
+
+.btn-1f:active:after {
+    height: 130%;
+    opacity: 1;
+}
+
+/* Button 2 */
+.btn-2 {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 6px #ddd;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+/* Button 2a */
+.btn-2a {
+    border-radius: 0 0 5px 5px;
+}
+
+.btn-2a:hover {
+    box-shadow: 0 4px #ddd;
+    top: 2px;
+}
+
+.btn-2a:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+/* Button 2b */
+.btn-2b {
+    border-radius: 0 0 5px 5px;
+}
+
+.btn-2b:hover {
+    box-shadow: 0 8px #ddd;
+    top: -2px;
+}
+
+.btn-2b:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+/* Button 2c */
+.btn-2c {
+    border-radius: 5px;
+}
+
+.btn-2c:hover {
+    box-shadow: 0 4px #ddd;
+    top: 2px;
+}
+
+.btn-2c:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+/* Button 2d */
+.btn-2d {
+    border-radius: 5px;
+}
+
+.btn-2d:hover {
+    box-shadow: 0 8px #ddd;
+    top: -2px;
+}
+
+.btn-2d:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+/* Button 2e */
+.btn-2e {
+    border-radius: 5px;
+    box-shadow: -6px 0 #ddd;
+}
+
+.btn-2e:hover {
+    box-shadow: -4px 0 #ddd;
+    left: -2px;
+}
+
+.btn-2e:active {
+    box-shadow: 0 0 #ddd;
+    left: -6px;
+}
+
+/* Button 2f */
+.btn-2f {
+    border-radius: 5px;
+    box-shadow: 6px 0 #ddd;
+}
+
+.btn-2f:hover {
+    box-shadow: 4px 0 #ddd;
+    left: 2px;
+}
+
+.btn-2f:active {
+    box-shadow: 0 0 #ddd;
+    left: 6px;
+}
+
+/* Button 2g */
+.btn-2g {
+    border-radius: 40px;
+}
+
+.btn-2g:hover {
+    box-shadow: 0 4px #ddd;
+    top: 2px;
+}
+
+.btn-2g:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+/* Button 2h */
+.btn-2h {
+    border-radius: 20px;
+}
+
+.btn-2h:hover {
+    box-shadow: 0 4px #ddd;
+    top: 2px;
+}
+
+.btn-2h:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+/* Button 2i */
+.btn-2i {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 0;
+}
+
+.btn-2i:hover {
+    box-shadow: 0 4px #ddd;
+    top: 2px;
+}
+
+.btn-2i:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+/* Button 2j */
+.btn-2j {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 0;
+}
+
+.btn-2j:hover {
+    box-shadow: 0 8px #ddd;
+    top: -2px;
+}
+
+.btn-2j:active {
+    box-shadow: 0 0 #ddd;
+    top: 6px;
+}
+
+
+
+/* Button 6 */
+.btn-6 {
+    color: #fff;
+    background: #000;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.btn-6:active {
+    top: 2px;
+}
+
+/* Button 6a */
+.btn-6a {
+    border: 4px solid #000;
+}
+
+.btn-6a:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6b */
+.btn-6b {
+    border: 4px solid #000;
+    border-radius: 15px;
+}
+
+.btn-6b:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6c */
+.btn-6c {
+    border: 4px solid #000;
+    border-radius: 60px;
+}
+
+.btn-6c:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6d */
+.btn-6d {
+    border: 2px dashed #000;
+}
+
+.btn-6d:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6e */
+.btn-6e {
+    border: 2px dashed #000;
+    border-radius: 15px;
+}
+
+.btn-6e:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6f */
+.btn-6f {
+    border: 2px dashed #000;
+    border-radius: 60px;
+}
+
+.btn-6f:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6g */
+.btn-6g {
+    border: 2px dotted #000;
+}
+
+.btn-6g:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6h */
+.btn-6h {
+    border: 2px dotted #000;
+    border-radius: 15px;
+}
+
+.btn-6h:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6i */
+.btn-6i {
+    border: 2px dotted #000;
+    border-radius: 60px;
+}
+
+.btn-6i:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6j */
+.btn-6j {
+    border: 4px double #000;
+}
+
+.btn-6j:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6k */
+.btn-6k {
+    border: 4px double #000;
+    border-radius: 15px;
+}
+
+.btn-6k:hover {
+    background: transparent;
+    color: #000;
+}
+
+/* Button 6l */
+.btn-6l {
+    border: 4px double #000;
+    border-radius: 60px;
+}
+
+.btn-6l:hover {
+    background: transparent;
+    color: #000;
+}
+
+
+
+/* Button 8 */
+.perspective {
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+    display: inline-block;
+}
+
+.btn-8 {
+    display: block;
+    background: #000;
+    outline: 1px solid transparent;
+    /* FF jagged edges fix */
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    color: #fff;
+}
+
+.btn-8:active {
+    background: #ddd;
+}
+
+/* Button 8a */
+.btn-8a:after {
+    width: 100%;
+    height: 42%;
+    /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
+    left: 0;
+    top: -40%;
+    background: #ddd;
+    -webkit-transform-origin: 0% 100%;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform-origin: 0% 100%;
+    -moz-transform: rotateX(90deg);
+    transform-origin: 0% 100%;
+    transform: rotateX(90deg);
+}
+
+.btn-8a:hover {
+    @include transform(rotateX(-15deg));
+}
+
+/* Button 8b */
+.btn-8b:after {
+    width: 100%;
+    height: 40%;
+    left: 0;
+    top: 100%;
+    background: #ddd;
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateX(-90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+}
+
+.btn-8b:hover {
+    @include transform(rotateX(15deg));
+}
+
+/* Button 8c */
+.btn-8c:after {
+    width: 21%;
+    height: 100%;
+    left: -20%;
+    top: 0;
+    background: #ddd;
+    -webkit-transform-origin: 100% 0%;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform-origin: 100% 0%;
+    -moz-transform: rotateY(-90deg);
+    -ms-transform-origin: 100% 0%;
+    -ms-transform: rotateY(-90deg);
+    transform-origin: 100% 0%;
+    transform: rotateY(-90deg);
+}
+
+.btn-8c:hover {
+    @include transform(rotateY(15deg));
+}
+
+/* Button 8d */
+.btn-8d:after {
+    width: 20%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    background: #ddd;
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateY(90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateY(90deg);
+    transform-origin: 0% 0%;
+    transform: rotateY(90deg);
+}
+
+.btn-8d:hover {
+    @include transform(rotateY(-15deg));
+}
+
+/* Button 8e */
+.btn-8e {
+    @include transform(rotateX(-15deg));
+}
+
+.btn-8e:after {
+    width: 100%;
+    height: 42%;
+    /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
+    left: 0;
+    top: -40%;
+    background: #ddd;
+    -webkit-transform-origin: 0% 100%;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform-origin: 0% 100%;
+    -moz-transform: rotateX(90deg);
+    -ms-transform-origin: 0% 100%;
+    -ms-transform: rotateX(90deg);
+    transform-origin: 0% 100%;
+    transform: rotateX(90deg);
+}
+
+.btn-8e:active {
+    @include transform(rotateX(0deg));
+}
+
+/* Button 8f */
+.btn-8f {
+    @include transform(rotateX(15deg));
+}
+
+.btn-8f:after {
+    width: 100%;
+    height: 40%;
+    left: 0;
+    top: 100%;
+    background: #ddd;
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateX(-90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+}
+
+.btn-8f:active {
+    @include transform(rotateX(0deg));
+}
+
+/* Button 8g */
+.btn-8g {
+    background: #000;
+    color: #999;
+}
+
+.btn-8g:active {
+    background: #000;
+}
+
+.btn-8g:after,
+.btn-8g:before {
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    line-height: 70px;
+}
+
+.btn-8g:after {
+    top: -98%;
+    /* should be -100% but there's a gap in Chrome Version 34.0.1847.131 */
+    background: #7aca7c;
+    color: #358337;
+    content: 'It worked!';
+    -webkit-transform-origin: 0% 100%;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform-origin: 0% 100%;
+    -moz-transform: rotateX(90deg);
+    -ms-transform-origin: 0% 100%;
+    -ms-transform: rotateX(90deg);
+    transform-origin: 0% 100%;
+    transform: rotateX(90deg);
+}
+
+.btn-8g:before {
+    top: 100%;
+    background: #e96a6a;
+    color: #a33a3a;
+    content: 'Error!';
+    font-weight: 700;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateX(-90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+}
+
+.btn-8g.btn-success3d {
+    background: #aaa;
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateX(-90deg) translateY(100%);
+    -moz-transform-origin: 50% 100%;
+    -moz-transform: rotateX(-90deg) translateY(100%);
+    -ms-transform-origin: 50% 100%;
+    -ms-transform: rotateX(-90deg) translateY(100%);
+    transform-origin: 50% 100%;
+    transform: rotateX(-90deg) translateY(100%);
+}
+
+.btn-8g.btn-error3d {
+    background: #aaa;
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transform: rotateX(90deg) translateY(-100%);
+    -moz-transform-origin: 50% 0%;
+    -moz-transform: rotateX(90deg) translateY(-100%);
+    -ms-transform-origin: 50% 0%;
+    -ms-transform: rotateX(90deg) translateY(-100%);
+    transform-origin: 50% 0%;
+    transform: rotateX(90deg) translateY(-100%);
+}
